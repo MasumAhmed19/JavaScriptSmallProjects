@@ -113,3 +113,49 @@ var prgsTime = setInterval(function(){
 }, 50)
 
 
+
+
+// projects 4
+// array of objects
+
+var searchInp = document.querySelector('#searchInp')
+
+var data = [
+    {name:"masum", src:"images/img1.webp"},
+    {name:"masumi", src:"images/img2.webp"},
+    {name:"masuma", src:"images/img3.webp"},
+    {name:"maaaama", src:"images/img4.webp"},
+    {name:"ahmed", src:"images/img5.webp"},
+    {name:"ahmde", src:"images/img6.webp"},
+    {name:"kiya", src:"images/img7.webp"},
+]
+
+
+var dataStore =""
+
+data.forEach(function(elem){
+    dataStore += `<div class="flex flex-col items-center gap-5 m-5">
+                 <img class="object-cover border-4 border-gray-200 rounded-full w-[200px] h-[200px] mt-4" src="${elem.src}" alt="">
+                 <p class="lato font-bold">${elem.name}</p>
+            </div>`
+})
+
+document.querySelector('#people').innerHTML = dataStore
+
+// input event
+document.querySelector('#searchInp').addEventListener("input", function(){
+    var matching = data.filter(function(e){
+        return e.name.startsWith(searchInp.value)
+    })
+
+    var afterSearch =""
+
+    matching.forEach(function(elem){
+        afterSearch += `<div class="flex flex-col items-center gap-5 m-5">
+                 <img class="object-cover border-4 border-gray-200 rounded-full w-[200px] h-[200px] mt-4" src="${elem.src}" alt="">
+                 <p class="lato font-bold">${elem.name}</p>
+            </div>`
+    })
+
+    document.querySelector('#people').innerHTML = afterSearch
+})
