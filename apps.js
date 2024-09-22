@@ -92,3 +92,24 @@ function showParagraph(index) {
         p.style.display = (i === index) ? "block" : "none"; // Show the selected paragraph, hide others
     });
 }
+
+
+
+// project 3
+
+var progress = document.querySelector('#progress')
+
+var count=0;
+
+var prgsTime = setInterval(function(){
+
+    if(count > 100){
+        clearInterval(prgsTime); // clear interval na dile, eta choltei thakbe. tai setinterval k ekta variable e rekhe seta condition wise clearInterval krte hoy
+    }else{
+        count++;
+        progress.style.width = count+'%'
+    }
+
+}, 50)
+
+
