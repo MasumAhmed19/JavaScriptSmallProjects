@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Projects</title>
+
+    <!-- Tailwind + DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- Google fonts: Ubuntu, Lato, Inria Sans -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        .ubuntu {
+            font-family: "Ubuntu", system-ui;
+        }
+
+        .lato {
+            font-family: "Lato", sans-serif;
+        }
+
+        .inria {
+            font-family: "Inria Sans", sans-serif;
+        }
+
+    </style>
+</head>
+<body class="bg-[#E7E4E5]">
+
+    <main class="container mx-auto flex flex-col justify-center items-center">
+        <!-- Project div -->
+        <!-- <div class="bg-white mt-[100px] min-h-[500px] w-full flex flex-col items-center justify-center rounded-lg py-[50px]"></div> -->
+        
+        <div class="bg-white mt-[100px] min-h-[500px] w-full flex flex-col items-center justify-center rounded-lg py-[50px]">
+            <p class="lato font-bold text-gray-200">Create an unorderd list. Allows users to add and remove list items dynamically using buttons</p>
+
+            <div>
+                <ul id="ulList" class="lato list-disc flex flex-col gap-2 my-5">
+                    <li>Pen</li>
+                    <li>Notes</li>
+                    <li>Calculator</li>
+                </ul>
+            </div>
+            <input id="inpBox" type="text" placeholder="Add/Remove item" class="lato my-5 input input-bordered w-full max-w-xs" />
+            <div class="">
+                <button id="addBtn" class="btn lato bg-green-400"> Add items</button>
+                <button id="removeBtn" class="btn lato bg-red-400"> Remove items</button>
+            </div>
+        </div>
+        
+
+        
+        <div class="bg-white mt-[100px] min-h-[500px] w-full flex flex-col items-center justify-center rounded-lg py-[50px]"></div>
+        
+        
+        <div class="mb-[100px]"></div>
+    </main>
+
+
+    
+    <script src="apps.js"></script>
+</body>
+</html>
