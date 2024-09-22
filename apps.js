@@ -121,13 +121,13 @@ var prgsTime = setInterval(function(){
 var searchInp = document.querySelector('#searchInp')
 
 var data = [
-    {name:"masum", src:"images/img1.webp"},
-    {name:"masumi", src:"images/img2.webp"},
-    {name:"masuma", src:"images/img3.webp"},
-    {name:"maaaama", src:"images/img4.webp"},
-    {name:"ahmed", src:"images/img5.webp"},
-    {name:"ahmde", src:"images/img6.webp"},
-    {name:"kiya", src:"images/img7.webp"},
+    {name:"masum", src:"./images/img1.webp"},
+    {name:"masumi", src:"./images/img2.webp"},
+    {name:"masuma", src:"./images/img3.webp"},
+    {name:"maaaama", src:"./images/img4.webp"},
+    {name:"ahmed", src:"./images/img5.webp"},
+    {name:"ahmde", src:"./images/img6.webp"},
+    {name:"kiya", src:"./images/img7.webp"},
 ]
 
 
